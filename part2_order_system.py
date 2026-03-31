@@ -12,7 +12,7 @@ menu = {
  "Rasgulla": {"category": "Desserts", "price": 80.0, "available": True},
  "Ice Cream": {"category": "Desserts", "price": 110.0, "available": False},
 }
-
+# TASK 1: Print the menu in a user-friendly format, grouped by category. For each item, show the name, price, and availability status.  
 # grouping menu
 cats = []
 
@@ -31,7 +31,7 @@ for c in cats:
             print(item, "₹"+str(price), "["+status+"]")
 
 # CART (simple version)
-
+# we will create a simple cart system where we can add items by name and quantity. The cart will be a list of dictionaries, each representing an item in the cart with its name, quantity, and price.
 cart = []
 
 def add_item(name, qty):
@@ -59,7 +59,7 @@ def add_item(name, qty):
         })
 
 # ORDER SUMMARY
-
+# we will calculate the subtotal, GST, and total for the items in the cart. We will also print a summary of the order with item names, quantities, and total price for each item.
 subtotal = 0
 
 for c in cart:
